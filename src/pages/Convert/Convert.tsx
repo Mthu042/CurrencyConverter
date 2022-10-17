@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FC } from 'react';
+import React, { useState, FC } from 'react';
 import CurrencyInput from '~/components/CurrencyInput';
 
 import { useGetCurrenciesQuery } from '~/services/currencies';
@@ -21,8 +21,6 @@ export const Convert: FC = () => {
     }
 
     function handleAmount1Change(amount1: number) {
-        console.log(currency1);
-
         setAmount2(
             format(
                 (amount1 * data[currency1][currency2]) /

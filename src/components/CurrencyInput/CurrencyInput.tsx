@@ -13,7 +13,6 @@ const CurrencyInput: FC<CurrencyInputTypes> = ({
 }) => {
     useEffect(() => {
         baseInput && onAmountChange(1);
-        console.log('ya tut tol`ko raz');
     }, []);
 
     return (
