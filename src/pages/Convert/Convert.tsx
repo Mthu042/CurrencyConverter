@@ -70,17 +70,18 @@ export const Convert: FC = () => {
     if (isLoading) {
         return <></>;
     }
+
     return (
-        <div className="mx-auto">
-            <h1>Currency Converter</h1>
+        <div className="">
             {data[currency1] && (
-                <div>
+                <div className="w-fit m-auto mt-16  space-y-4">
                     <CurrencyInput
                         onAmountChange={handleAmount1Change}
                         onCurrencyChange={handleCurrency1Change}
                         currencies={Object.keys(data[currency1])}
                         amount={amount1}
                         currency={currency1}
+                        baseInput
                     />
                     <CurrencyInput
                         onAmountChange={handleAmount2Change}

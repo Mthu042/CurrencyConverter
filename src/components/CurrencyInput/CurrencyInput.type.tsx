@@ -4,4 +4,5 @@ export type CurrencyInputTypes = {
     currencies: string[];
     onAmountChange: (amount: number) => void;
     onCurrencyChange: (currency: string) => void;
+    baseInput?: boolean;
 };
