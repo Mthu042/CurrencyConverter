@@ -1,5 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/Index.tsx',
     output: {
@@ -29,6 +30,7 @@ module.exports = {
             },
         ],
     },
+    plugins: [new HtmlWebpackPlugin({ template: './webPackTemplate.ejs' })],
     resolve: {
         extensions: ['.tsx', '.ts', ' .jsx', '.js'],
     },

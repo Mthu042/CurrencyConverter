@@ -7,7 +7,7 @@ git clone https://github.com/Mthu042/currencyConverter.git
 ```
 
 ```
-cd currencyConverter 
+cd currencyConverter
 ```
 
 <h3>if u dont use yarn, download it  by this command </h3>
@@ -20,6 +20,10 @@ npm i --global yarn
 
 ```
 yarn install
+```
+
+```
+yarn build
 ```
 
 ```
