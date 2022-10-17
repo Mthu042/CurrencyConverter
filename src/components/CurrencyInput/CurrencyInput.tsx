@@ -12,7 +12,7 @@ const CurrencyInput: FC<CurrencyInputTypes> = ({
     baseInput,
 }) => {
     useEffect(() => {
-        baseInput && onAmountChange(1);
+        baseInput && onAmountChange(amount);
     }, []);
 
     return (

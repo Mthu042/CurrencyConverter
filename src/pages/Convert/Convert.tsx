@@ -39,7 +39,6 @@ export const Convert: FC = () => {
                 )
             );
         setCurrency1(currency1);
-        handleAmount1Change(1);
     }
 
     function handleAmount2Change(amount2: number) {
