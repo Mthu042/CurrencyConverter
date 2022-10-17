@@ -27,8 +27,8 @@ export const List: React.FC = () => {
 
     const columns: GridColDef[] = [
         { field: 'id', headerName: 'ID', width: 50 },
-        { field: 'Currency', headerName: 'Currency', width: 70 },
-        { field: 'Value', headerName: 'Value', width: 70 },
+        { field: 'Currency', headerName: 'Currency', width: 140 },
+        { field: 'Value', headerName: 'Value', width: 140 },
     ];
     let rows = [{ id: 0, Currency: '', Value: 0 }];
     if (!isLoading && data[currency]) {
@@ -49,12 +49,12 @@ export const List: React.FC = () => {
         return <></>;
     }
     return (
-        <div>
+        <div className="w-fit m-auto mt-6  space-y-2 justify-center">
             <TextField
+                className="bg-bisque rounded"
                 id="outlined-select-currency"
                 select
                 value={currency}
-                helperText="Please select base currency"
                 onChange={(ev) => handleChangeCurrency(ev.target.value)}
             >
                 {data[currency] &&
@@ -65,16 +65,13 @@ export const List: React.FC = () => {
                     ))}
             </TextField>
             <Box sx={{ height: 400, width: 400 }}>
-                {isLoading ? (
-                    <div>LOAD</div>
-                ) : (
-                    <DataGrid
-                        pageSize={15}
-                        rowsPerPageOptions={[5]}
-                        rows={rows}
-                        columns={columns}
-                    />
-                )}
+                <DataGrid
+                    className="bg-white"
+                    pageSize={15}
+                    rowsPerPageOptions={[5]}
+                    rows={rows}
+                    columns={columns}
+                />
             </Box>
         </div>
     );

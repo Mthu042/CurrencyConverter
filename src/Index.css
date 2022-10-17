@@ -8,4 +8,7 @@
     html {
         font-family: 'Noto Serif', serif;
     }
+    body {
+        background-color: rgb(69, 86, 134);
+    }
 }

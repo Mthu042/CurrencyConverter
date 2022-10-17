@@ -13,11 +13,11 @@ const Header = () => {
                 position="static"
                 className="z-50"
             >
-                <Toolbar className="justify-center">
-                    <Link className="mx-10 text-2xl " to="/">
+                <Toolbar className="justify-center space-x-40  ">
+                    <Link className=" text-2xl " to="/">
                         <p className="hover:text-sky-400">Convert</p>
                     </Link>
-                    <Link className="mx-10 text-2xl" to="/List">
+                    <Link className=" text-2xl" to="/List">
                         <p className="hover:text-sky-400">List</p>
                     </Link>
                 </Toolbar>

@@ -5,6 +5,9 @@ module.exports = {
             colors: {
                 header: '#070E27',
                 site: '#060915',
+                input: '#fde1ff',
+                table: '#e5e1ff',
+                bisque: '#ffe4c4'
             },
         },
     },
