@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '~/components/Header';
+import Header from '~/components';
 import { BrowserRouter } from 'react-router-dom';
+import Routes from '~/routes';
 
 const App: React.FC = () => (
     <BrowserRouter>
-        <div className="bg-site h-screen ">
-            <Header />
-        </div>
+        <Header />
+        <Routes />
     </BrowserRouter>
 );
 export default App;
