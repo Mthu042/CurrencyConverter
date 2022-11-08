@@ -24,7 +24,7 @@ export const Convert: FC = () => {
         setAmount2(
             format(
                 (amount1 * data[currency1][currency2]) /
-                    data[currency1][currency1]
+                data[currency1][currency1]
             )
         );
         setAmount1(amount1);
@@ -35,7 +35,7 @@ export const Convert: FC = () => {
             setAmount2(
                 format(
                     (amount1 * data[currency1][currency2]) /
-                        data[currency1][currency1]
+                    data[currency1][currency1]
                 )
             );
         setCurrency1(currency1);
@@ -45,7 +45,7 @@ export const Convert: FC = () => {
         setAmount1(
             format(
                 (amount2 * data[currency1][currency1]) /
-                    data[currency1][currency2]
+                data[currency1][currency2]
             )
         );
         setAmount2(amount2);
@@ -55,7 +55,7 @@ export const Convert: FC = () => {
         setAmount2(
             format(
                 (amount1 * data[currency1][currency2]) /
-                    data[currency1][currency1]
+                data[currency1][currency1]
             )
         );
         setCurrency2(currency2);
@@ -69,7 +69,7 @@ export const Convert: FC = () => {
     }
 
     return (
-        <div className="">
+        <div>
             {data[currency1] && (
                 <div className="w-fit m-auto mt-16  space-y-4">
                     <CurrencyInput
